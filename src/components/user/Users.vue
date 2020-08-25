@@ -392,9 +392,9 @@
 				} = await this.$http.put(`users/${this.userInfo.id}/role`, {
 					rid: this.selectedRoleId
 				})
-				// console.log(res)
+				//console.log(res)
 				if (res.meta.status !== 200) {
-					// console.log(res.meta.status)
+					//console.log(res.meta.status)
 					return this.$message.error('更新角色失败!')
 				}
 				this.$message.success('更新角色成功!')
